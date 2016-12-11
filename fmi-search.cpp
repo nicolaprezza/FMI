@@ -1,21 +1,3 @@
-
-/*
- *  This file is part of lz-rlbwt.
- *  Copyright (c) by
- *  Nicola Prezza <nicolapr@gmail.com>,
- *  Djamal Belazzougui, Fabio Cunial, Travis Gagie, and Mathieu Raffinot
- *
- *   lz-rlbwt is free software: you can redistribute it and/or modify
- *   it under the terms of the GNU General Public License as published by
- *   the Free Software Foundation, either version 3 of the License, or
- *   (at your option) any later version.
-
- *   lz-rlbwt is distributed in the hope that it will be useful,
- *   but WITHOUT ANY WARRANTY; without even the implied warranty of
- *   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- *   GNU General Public License for more details (<http://www.gnu.org/licenses/>).
- */
-
 #include <utils.h>
 #include <iostream>
 #include <chrono>
@@ -34,7 +16,7 @@ void help(){
 	cout << "Usage: fmi-search [options] <index_name> <patterns_file>" << endl;
 	cout << "   -l                  locate occurrences (otherwise only count)" << endl;
 	cout << "   -sr <value>         the suffix array and inverse suffix array sample rates are both set to 2^value. Accepted values: 5,..,10. Default = 9. Note that this value must be the same used during construction."<<endl;
-	cout << "   <index_basename>    basename of all index files" << endl;
+	cout << "   <index_name>    index file (with .fmi extension)" << endl;
 	cout << "   <patterns_file>     file in pizza&chili format containing the patterns." << endl;
 	exit(0);
 }

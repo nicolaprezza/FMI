@@ -32,3 +32,8 @@ add_executable(fmi-search fmi-search.cpp)
 TARGET_LINK_LIBRARIES(fmi-search sdsl)
 TARGET_LINK_LIBRARIES(fmi-search divsufsort)
 TARGET_LINK_LIBRARIES(fmi-search divsufsort64)
+
+add_executable(genpatterns genpatterns.cpp)
+TARGET_LINK_LIBRARIES(genpatterns sdsl)
+TARGET_LINK_LIBRARIES(genpatterns divsufsort)
+TARGET_LINK_LIBRARIES(genpatterns divsufsort64)
